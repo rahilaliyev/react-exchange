@@ -1,0 +1,17 @@
+.currencies {
+  .currency {
+    @include fontSize(16px, 400, 19px);
+    border-radius: 20px;
+    box-shadow: $lightBoxShadow;
+    padding: 20px 30px;
+    .name {
+      margin-left: 27px;
+    }
+    .result {
+      float: right;
+    }
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}

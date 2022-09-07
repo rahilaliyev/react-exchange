@@ -1,0 +1,50 @@
+.amount {
+  padding: 22px 39px 46px 35px;
+  border-radius: 20px;
+  box-shadow: $middleBoxShadow;
+  margin-bottom: 32px;
+  h6 {
+    @include fontSize(18px, 400, 21px);
+    margin-bottom: 12px;
+  }
+  form {
+    height: 52px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: $grey;
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 22px;
+    input {
+      height: 100%;
+      width: 80%;
+      background: transparent;
+      padding-left: 20px;
+      @include fontSize(18px, 400, 21px);
+      appearance: none;
+    }
+    button {
+      width: 20%;
+      height: 100%;
+      background-color: white;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 0px 10px 10px 0px;
+      cursor: pointer;
+      transition: 0.5s;
+      svg {
+        font-size: 20px;
+        color: $blue;
+        transition: 0.5s;
+      }
+      &:hover {
+        background-color: $blue;
+        svg {
+          transform: rotate(180deg);
+          color: white;
+        }
+      }
+    }
+  }
+  .result {
+    @include fontSize(18px, 400, 21px);
+  }
+}

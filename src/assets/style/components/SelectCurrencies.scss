@@ -1,0 +1,82 @@
+.select-currencies {
+  @include flexBox(space-between, center);
+  margin-bottom: 32px;
+  .select {
+    @include fontSize(18px, 400, 21px);
+    position: relative;
+    width: 45%;
+    border-radius: 20px;
+    box-shadow: $darkBoxShadow;
+    text-align: center;
+    span {
+      background-image: url("../../img/arrow.svg");
+      background-repeat: no-repeat;
+      background-position-x: 90%;
+      background-position-y: center;
+      display: block;
+      padding: 17px;
+      cursor: pointer;
+    }
+    .dropdown {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      height: 280px;
+      background-color: white;
+      box-shadow: $darkBoxShadow;
+      border-radius: 20px 0 0 20px;
+      overflow: auto;
+      input {
+        width: 90%;
+        height: 30px;
+        background-color: $grey;
+        margin-top: 10px;
+        padding: 0 10px;
+        border-radius: 10px;
+      }
+      li {
+        padding: 5px;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+          background-color: $blue;
+          color: white;
+        }
+      }
+    }
+    ::-webkit-scrollbar {
+      padding: 5px 0;
+      width: 5px;
+      &-track {
+        box-shadow: inset 0 0 5px rgb(218, 218, 218);
+        border-radius: 10px;
+      }
+      &-thumb {
+        background: gray;
+        border-radius: 10px;
+        &:hover {
+          background: $blue;
+        }
+      }
+    }
+  }
+  .change {
+    border-radius: 50%;
+    padding: 10px;
+    background: none;
+    transition: 0.5s;
+    cursor: pointer;
+    svg {
+      font-size: 20px;
+      color: $blue;
+    }
+    &:hover {
+      background-color: $blue;
+      transform: rotate(180deg);
+      svg {
+        color: white;
+      }
+    }
+  }
+}
