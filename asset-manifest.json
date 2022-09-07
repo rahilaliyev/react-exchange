@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-exchange/static/css/main.b339b575.css",
+    "main.js": "/react-exchange/static/js/main.def93d07.js",
+    "static/media/arrow.svg": "/react-exchange/static/media/arrow.05ceca3ea157cf0d1747.svg",
+    "index.html": "/react-exchange/index.html",
+    "main.b339b575.css.map": "/react-exchange/static/css/main.b339b575.css.map",
+    "main.def93d07.js.map": "/react-exchange/static/js/main.def93d07.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b339b575.css",
+    "static/js/main.def93d07.js"
+  ]
+}
